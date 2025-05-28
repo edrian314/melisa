@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GlowBeauty - Radiate Confidence</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <div class="logo" aria-label="GlowBeauty Logo">GlowBeauty</div>
+      <nav aria-label="Primary navigation">
+        <ul id="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact us</a></li>
+          
+        </ul>
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" role="button" tabindex="0">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero" role="banner">
+    <h1>Radiate Confidence With GlowBeauty</h1>
+    <p>Luxury beauty products crafted to nourish your skin & soul.</p>
+    <button class="btn-primary" id="shop-now-btn" aria-label="Shop now">Shop Now</button>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title">Who We Are</h2>
+    <p>GlowBeauty is dedicated to bringing you premium quality, natural, and cruelty-free beauty products that help you look and feel your best every day.</p>
+  </section>
+
+  <section id="products" aria-labelledby="products-title">
+    <h2 id="products-title">Featured Products</h2>
+    <div class="filter-buttons" role="group" aria-label="Filter products by category">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="skincare" aria-pressed="false">Skin Care</button>
+      <button class="filter-btn" data-filter="makeup" aria-pressed="false">Makeup</button>
+      <button class="filter-btn" data-filter="fragrance" aria-pressed="false">Fragrance</button>
+    </div>
+    <div class="products-grid" id="products-grid">
+      <article class="product-item" data-category="skincare" tabindex="0" aria-label="Hydrating Facial Serum. Skin Care Product.  ₱100.00">
+        <img src="https://m.media-amazon.com/images/I/61G-HZ57fOL._SL1100_.jpg" alt="Hydrating Facial Serum bottle" class="product-image" />
+        <div class="product-info">
+          <h3>Hydrating Facial Serum</h3>
+          <p>Boosts moisture and smooths skin texture for a radiant glow.</p>
+          <div class="price">₱100.00</div>
+          <button class="add-cart-btn" aria-label="Add Hydrating Facial Serum to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-item" data-category="makeup" tabindex="0" aria-label="Velvet Matte Lipstick, Nude Pink. Makeup Product. ₱120.00">
+        <img src="https://i.ebayimg.com/images/g/k0gAAOSwqG5dPwi3/s-l1200.jpg" alt="Velvet Matte Lipstick in nude pink" class="product-image" />
+        <div class="product-info">
+          <h3>Velvet Matte Lipstick</h3>
+          <p>Long-lasting nude pink shade for all-day elegance.</p>
+          <div class="price">₱120.00</div>
+          <button class="add-cart-btn" aria-label="Add Velvet Matte Lipstick to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-item" data-category="fragrance" tabindex="0" aria-label="Floral Bouquet Eau de Parfum. Fragrance Product. $168.00">
+        <img src="https://tjcuk.sirv.com/Products/31/9/3194622/Floral-Bouquet-Eau-De-Parfum-100ml_3194622.jpg?w=420&q=60" alt="Floral Bouquet Eau de Parfum bottle" class="product-image" />
+        <div class="product-info">
+          <h3>Floral Bouquet Eau de Parfum</h3>
+          <p>A fresh and romantic fragrance that captivates the senses.</p>
+          <div class="price"> ₱160.00</div>
+          <button class="add-cart-btn" aria-label="Add Floral Bouquet Eau de Parfum to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-item" data-category="skincare" tabindex="0" aria-label="Revitalizing Eye Cream. Skin Care Product.  ₱138.00">
+        <img src="https://th.bing.com/th/id/OIP.k7jY-8Y8-8SVBoMXYvamegHaHa?rs=1&pid=ImgDetMain" alt="Revitalizing Eye Cream jar" class="product-image" />
+        <div class="product-info">
+          <h3>Revitalizing Eye Cream</h3>
+          <p>Reduces puffiness and dark circles with natural botanicals.</p>
+          <div class="price">₱138.00</div>
+          <button class="add-cart-btn" aria-label="Add Revitalizing Eye Cream to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-item" data-category="makeup" tabindex="0" aria-label="Luminous Highlighter Palette. Makeup Product. ₱130.00">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Luminous Highlighter Palette compact" class="product-image" />
+        <div class="product-info">
+          <h3>Luminous Highlighter Palette</h3>
+          <p>Add a radiant glow to your complexion with easy blending shades.</p>
+          <div class="price">₱130.00</div>
+          <button class="add-cart-btn" aria-label="Add Luminous Highlighter Palette to cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="product-item" data-category="fragrance" tabindex="0" aria-label="Citrus Breeze Body Mist. Fragrance Product. ₱125.00">
+        <img src="https://vellaluxebeauty.com/cdn/shop/files/D6787E74-A2E8-4B94-916D-032654D92E1F.png?v=1746407055" alt="Citrus Breeze Body Mist spray bottle" class="product-image" />
+        <div class="product-info">
+          <h3>Citrus Breeze Body Mist</h3>
+          <p>A refreshing blend of citrus fruits for a fresh scent all day.</p>
+          <div class="price">₱125.00</div>
+          <button class="add-cart-btn" aria-label="Add Citrus Breeze Body Mist to cart">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-title">
+    <h2 id="reviews-title">What Our Customers Say</h2>
+    <div class="review-slider" aria-live="polite" aria-atomic="true">
+      <blockquote class="review-slide active" id="review-slide-1">
+        <p>"GlowBeauty's skincare products transformed my skin, leaving it soft and radiant. I highly recommend their Hydrating Serum!"</p>
+        <cite class="review-author">– Meme Empasis. </cite>
+      </blockquote>
+      <blockquote class="review-slide" id="review-slide-2">
+        <p>"The lipsticks have such a smooth texture and long-lasting color. I fell in love with the Velvet Matte - nude pink is my new favorite."</p>
+        <cite class="review-author">– Trixia M.</cite>
+      </blockquote>
+      <blockquote class="review-slide" id="review-slide-3">
+        <p>"Beach days feel even better with the Citrus Breeze body mist. Refreshing and light aroma that lasts all day."</p>
+        <cite class="review-author">– Dr. Ignel.</cite>
+      </blockquote>
+    </div>
+    <div class="review-nav" role="tablist" aria-label="Review navigation">
+      <button role="tab" aria-controls="review-slide-1" aria-selected="true" class="active" aria-label="Review 1" data-index="0">&#9679;</button>
+      <button role="tab" aria-controls="review-slide-2" aria-selected="false" aria-label="Review 2" data-index="1">&#9679;</button>
+      <button role="tab" aria-controls="review-slide-3" aria-selected="false" class="active" aria-label="Review 3" data-index="2">&#9679;</button>
+    </div>
+  </section>
+  </footer>
+  <section id="services">
+      <h2>Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Consulting</h3>
+          <p>Expert advice to help your business thrive in a competitive market.</p>
+        </div>
+        <div class="service-card">
+          <h3>Development</h3>
+          <p>Custom software solutions tailored to your unique needs and goals.</p>
+        </div>
+        <div class="service-card">
+          <h3>Support</h3>
+          <p>Reliable and responsive support services to keep your business running smoothly.</p>
+        </div>
+      </div>
+    </section>
+  <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="success-message" id="successMessage">Thank you! Your message has been sent.</p>
+    </section>
+  <footer>
+    <p>© 2024 GlowBeauty. All rights reserved.</p>
+    <div class="social-icons" aria-label="Social media links">
+      <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+      <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">🐦</a>
+      <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📸</a>
+      <a href="#" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">📌</a>
+    </div>
+  </main>
+
+
+  <script src="java.js"></script>
+</body>
+</html>
+
